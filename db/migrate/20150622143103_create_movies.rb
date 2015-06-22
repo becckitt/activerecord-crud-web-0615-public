@@ -1,5 +1,5 @@
-class Movie < ActiveRecord::Base
-  def create
+class CreateMovies < ActiveRecord::Migration
+  def change
     create_table :movies do |m|
       m.text :title
       m.datetime :release_date
